@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="currency.css">
+</head>
+
+<body>
+<header class="header">
+    <div class="header-left">
+      <img src="nx_logo.jpg" alt="Logo" class="logo">
+      <div class="site-name">Currency Converter</div>
+    </div>
+</header>
+
+<marquee scrollamount="6" direction="left" class="marquee" style="font-family: 'Montserrat', Sans-serif">
+  Welcome to Coinverter | Fast. Easy. Reliable | No hidden charges. Instant results.| Convert smarter now!
+</marquee>
+
+
+<div class="container">
+  <center><img src="./money.jpg" alt="currency logo"></center>
+  <label for="sourceCountry">Source Country:</label>
+  <select id="sourceCountry">
+    <option value="IN">India</option>
+    <option value="US">USA</option>
+    <option value="UK">UK</option>
+    <option value="EU">Europe</option>
+    <option value="JP">Japan</option>
+  </select>
+  
+  <label for="destinationCountry" id="box">Destination Country:</label>
+  <select id="destinationCountry">
+    <option value="IN">India</option>
+    <option value="US">USA</option>
+    <option value="UK">UK</option>
+    <option value="EU">Europe</option>
+    <option value="JP">Japan</option>
+  </select>
+
+  <label for="amount">Enter Amount:</label>
+  <input type="number" id="amount" min="0" placeholder="Enter amount">
+
+  <label for="convertedAmount">Converted Amount:</label>
+  <input type="text" id="convertedAmount" readonly>
+
+  <button onclick="convertCurrency()">Convert</button>
+
+  <div class="info" id="rateInfo"></div>
+</div>
+
+<script src="currency.js"></script>
+<footer class="footer">
+  &copy;2025 NEXORA. All rights reserved.
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
